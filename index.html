@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gali Dana – Menu Spesial Natal 🎄</title>
+    <meta name="description" content="Menu spesial Gali Dana – Kamis 9 Oktober, pesanan mulai diantar. Berbagai pilihan makanan lezat dari SMA Pelita Nusantara & Bhakti Wiyata.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Falling snow -->
+    <div class="snow-container" id="snowContainer"></div>
+
+    <!-- ===== HERO / HEADER ===== -->
+    <header class="hero">
+        <div class="hero-decorations">
+            <div class="holly left-holly">🎄</div>
+            <div class="holly right-holly">🎄</div>
+        </div>
+
+        <div class="hero-content">
+            <!-- School logos -->
+            <div class="school-logos">
+                <div class="logo-card">
+                    <img src="images/logo_pelita_nusantara.jpg" alt="Logo Pelita Nusantara" class="school-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="logo-divider"></div>
+                <div class="logo-card">
+                    <img src="images/logo_bhakti_wiyata.png" alt="Logo Bhakti Wiyata" class="school-logo" onerror="this.style.display='none'">
+                </div>
+            </div>
+
+            <!-- Brand -->
+            <div class="brand-wrapper">
+                <span class="brand-pre">✨ Hadirkan Kelezatan ✨</span>
+                <h1 class="brand-title">Gali Dana</h1>
+                <div class="brand-ornament">
+                    <span class="ornament-line"></span>
+                    <span class="ornament-icon">🎁</span>
+                    <span class="ornament-line"></span>
+                </div>
+            </div>
+
+            <!-- Info badge -->
+            <div class="hero-badge">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Kamis, 9 Oktober &nbsp;|&nbsp; Pesanan Mulai Diantar</span>
+                <i class="fa-solid fa-sleigh"></i>
+            </div>
+        </div>
+
+        <!-- Wave divider -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+                <path d="M0,0 C300,80 900,0 1200,60 L1200,80 L0,80 Z" fill="#fffbe9"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- ===== INFO BANNER ===== -->
+    <div class="info-banner">
+        <div class="info-banner-inner">
+            <div class="info-icon">⚠️</div>
+            <div class="info-text">
+                <span class="info-label">INFO PENTING</span>
+                <span class="info-message">Last PO: <strong>Rabu, 8 Oktober 2026</strong> — Segera pesan sebelum terlambat!</span>
+            </div>
+            <div class="info-countdown" id="countdown">
+                <span class="countdown-label">Sisa Waktu</span>
+                <span class="countdown-value" id="countdownTimer">--:--:--</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MAIN MENU ===== -->
+    <main class="main-content">
+
+        <div class="section-header">
+            <div class="xmas-label">
+                <span>🎅</span>
+                <span class="xmas-label-text">Menu Pilihan</span>
+                <span>🎅</span>
+            </div>
+            <h2 class="section-title">Aneka Hidangan Lezat</h2>
+            <p class="section-subtitle">Pilihan makanan terbaik yang siap menghangatkan harimu</p>
+        </div>
+
+        <div class="menu-grid">
+
+            <!-- Item 1: Risol Mayo -->
+            <article class="menu-card" id="card-risol">
+                <div class="card-img-wrapper">
+                    <img src="images/risol_mayo.jpg" alt="Risol Mayo" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge">
+                        <span class="price-amount">3,5k</span>
+                        <span class="price-unit">/pcs</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Risol Mayo</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 2 pcs</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 6.000</span>
+                        <span class="card-tag">🥐 Snack</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 2: Dimsum Mentai -->
+            <article class="menu-card" id="card-dimsum">
+                <div class="card-img-wrapper">
+                    <img src="images/dimsum_mentai.jpg" alt="Dimsum Mentai" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge">
+                        <span class="price-amount">16k</span>
+                        <span class="price-unit">/box</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Dimsum Mentai</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 4 pcs</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 16.000</span>
+                        <span class="card-tag">🥟 Dim Sum</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 3: Kentang Crispy -->
+            <article class="menu-card" id="card-kentang">
+                <div class="card-img-wrapper">
+                    <img src="images/kentang_crispy.jpg" alt="Kentang Crispy" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge">
+                        <span class="price-amount">7k</span>
+                        <span class="price-unit">/porsi</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Kentang Crispy</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 1 Porsi</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 7.000</span>
+                        <span class="card-tag">🍟 Crispy</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 4: Pisang Coklat -->
+            <article class="menu-card" id="card-piscok">
+                <div class="card-img-wrapper">
+                    <img src="images/pisang_coklat.jpg" alt="Pisang Coklat" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge">
+                        <span class="price-amount">13k</span>
+                        <span class="price-unit">/box</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Pisang Coklat</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 7 pcs</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 13.000</span>
+                        <span class="card-tag">🍫 Sweet</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 5: Cheese Roll -->
+            <article class="menu-card" id="card-cheeseroll">
+                <div class="card-img-wrapper">
+                    <img src="images/cheese_roll.jpg" alt="Cheese Roll" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge">
+                        <span class="price-amount">13k</span>
+                        <span class="price-unit">/box</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Cheese Roll</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 7 pcs</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 13.000</span>
+                        <span class="card-tag">🧀 Cheesy</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 6: Tahu Kocek -->
+            <article class="menu-card" id="card-tahu">
+                <div class="card-img-wrapper">
+                    <img src="images/tahu_kocek.jpg" alt="Tahu Kocek" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge">
+                        <span class="price-amount">13k</span>
+                        <span class="price-unit">/styrofoam</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Tahu Kocek</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 1 Styrofoam</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 13.000</span>
+                        <span class="card-tag">🍢 Savory</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 7: Udang Rambutan -->
+            <article class="menu-card" id="card-udang">
+                <div class="card-img-wrapper">
+                    <img src="images/udang_rambutan.jpg" alt="Udang Rambutan" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge">
+                        <span class="price-amount">10k</span>
+                        <span class="price-unit">/box</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Udang Rambutan</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 3 pcs</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 10.000</span>
+                        <span class="card-tag">🦐 Seafood</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 8: Wonton Chili Oil -->
+            <article class="menu-card" id="card-wonton">
+                <div class="card-img-wrapper">
+                    <img src="images/wonton_chili_oil.jpg" alt="Wonton Chili Oil" class="card-img" onerror="this.style.display='none'">
+                    <div class="card-img-overlay"></div>
+                    <div class="price-badge popular">
+                        <span class="price-amount">12k</span>
+                        <span class="price-unit">/porsi</span>
+                    </div>
+                    <div class="popular-ribbon">🔥 Favorit</div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Wonton Chili Oil</h3>
+                    <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 1 Porsi</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 12.000</span>
+                        <span class="card-tag">🌶️ Spicy</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Brownies Section (centered) -->
+        <div class="brownies-section">
+            <div class="brownies-notice">
+                <span class="brownies-notice-icon">🗓️</span>
+                <span>Brownies <strong>ready mulai Senin, 13 Oktober 2026</strong> — Pre-order sekarang!</span>
+            </div>
+            <div class="brownies-grid">
+
+                <!-- Item 9: Brownies Coklat -->
+                <article class="menu-card" id="card-brownie-choco">
+                    <div class="card-img-wrapper">
+                        <img src="images/brownies_coklat.jpg" alt="Brownies Coklat" class="card-img" onerror="this.style.display='none'">
+                        <div class="card-img-overlay"></div>
+                        <div class="price-badge">
+                            <span class="price-amount">7k</span>
+                            <span class="price-unit">/porsi</span>
+                        </div>
+                        <div class="ready-ribbon">📅 13 Okt</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-name">Brownies Coklat</h3>
+                        <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 1 Porsi</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 7.000</span>
+                            <span class="card-tag">🍫 Dessert</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Item 10: Brownies Keju -->
+                <article class="menu-card" id="card-brownie-cheese">
+                    <div class="card-img-wrapper">
+                        <img src="images/brownies_keju.jpg" alt="Brownies Keju" class="card-img" onerror="this.style.display='none'">
+                        <div class="card-img-overlay"></div>
+                        <div class="price-badge">
+                            <span class="price-amount">7k</span>
+                            <span class="price-unit">/porsi</span>
+                        </div>
+                        <div class="ready-ribbon">📅 13 Okt</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-name">Brownies Keju</h3>
+                        <p class="card-qty"><i class="fa-solid fa-layer-group"></i> 1 Porsi</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 7.000</span>
+                            <span class="card-tag">🧀 Dessert</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- ===== FOOTER / CONTACT ===== -->
+    <footer class="contact-footer">
+        <div class="footer-top-wave">
+            <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+                <path d="M0,80 C300,0 900,80 1200,20 L1200,0 L0,0 Z" fill="#fffbe9"/>
+            </svg>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-icon">🎄</div>
+            <h2 class="footer-title">Contact Person</h2>
+            <p class="footer-subtitle">Pesan sekarang sebelum kehabisan!</p>
+
+            <div class="contact-cards">
+                <a href="https://wa.me/6282228764048" class="contact-card" target="_blank" id="wa-maria">
+                    <div class="contact-card-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-card-info">
+                        <span class="contact-name">Maria</span>
+                        <span class="contact-number">+62 822-2876-4048</span>
+                    </div>
+                    <div class="contact-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/6281977182071" class="contact-card" target="_blank" id="wa-yessy">
+                    <div class="contact-card-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-card-info">
+                        <span class="contact-name">Yessy</span>
+                        <span class="contact-number">+62 819-7718-2071</span>
+                    </div>
+                    <div class="contact-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>🎁 &nbsp; Kamis, 9 Oktober &nbsp; | &nbsp; Pesanan mulai diantar &nbsp; 🎁</p>
+                <p class="footer-brand">Gali Dana &copy; 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
